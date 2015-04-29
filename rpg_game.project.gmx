@@ -86,7 +86,6 @@
     <background>background\back_clouds</background>
   </backgrounds>
   <paths name="paths"/>
-  <shaders name="shaders"/>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_mr_flower</object>
