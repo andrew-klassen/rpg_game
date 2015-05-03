@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="20" name="datafiles">
+  <datafiles number="25" name="datafiles">
     <datafile>
       <name>inc_background_cloud.png</name>
       <exists>-1</exists>
@@ -72,92 +72,181 @@
       </ConfigOptions>
       <filename>inc_sand_texture.png</filename>
     </datafile>
-    <datafiles number="20" name="the_man_sprites">
-      <datafile>
-        <name>inc_the_man_idle.png</name>
-        <exists>-1</exists>
-        <size>51544</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>inc_the_man_idle.png</filename>
-      </datafile>
-      <datafile>
-        <name>inc_the_man_move_right_1.png</name>
-        <exists>-1</exists>
-        <size>51544</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>inc_the_man_move_right_1.png</filename>
-      </datafile>
-      <datafile>
-        <name>inc_the_man_move_right_2.png</name>
-        <exists>-1</exists>
-        <size>51544</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>inc_the_man_move_right_2.png</filename>
-      </datafile>
-      <datafile>
-        <name>inc_the_man_right.cycle2_1.png</name>
-        <exists>-1</exists>
-        <size>51544</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>inc_the_man_right.cycle2_1.png</filename>
-      </datafile>
-      <datafile>
-        <name>the_man_right.cycle2_2.png</name>
-        <exists>-1</exists>
-        <size>51544</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>the_man_right.cycle2_2.png</filename>
-      </datafile>
+    <datafiles number="25" name="the_man_sprites">
+      <datafiles number="25" name="right_movement">
+        <datafile>
+          <name>inc_the_man_idle.png</name>
+          <exists>-1</exists>
+          <size>51544</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>inc_the_man_idle.png</filename>
+        </datafile>
+        <datafile>
+          <name>inc_the_man_move_right_1.png</name>
+          <exists>-1</exists>
+          <size>51544</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>inc_the_man_move_right_1.png</filename>
+        </datafile>
+        <datafile>
+          <name>inc_the_man_move_right_2.png</name>
+          <exists>-1</exists>
+          <size>51544</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>inc_the_man_move_right_2.png</filename>
+        </datafile>
+        <datafile>
+          <name>inc_the_man_right.cycle2_1.png</name>
+          <exists>-1</exists>
+          <size>51544</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>inc_the_man_right.cycle2_1.png</filename>
+        </datafile>
+        <datafile>
+          <name>the_man_right.cycle2_2.png</name>
+          <exists>-1</exists>
+          <size>51544</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>the_man_right.cycle2_2.png</filename>
+        </datafile>
+      </datafiles>
+      <datafiles number="25" name="left_movement">
+        <datafile>
+          <name>inc_the_man_idle_flipped.png</name>
+          <exists>-1</exists>
+          <size>51544</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>inc_the_man_idle_flipped.png</filename>
+        </datafile>
+        <datafile>
+          <name>inc_the_man_move_right_2_flipped.png</name>
+          <exists>-1</exists>
+          <size>51544</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>inc_the_man_move_right_2_flipped.png</filename>
+        </datafile>
+        <datafile>
+          <name>inc_the_man_right.cycle2_1_flipped.png</name>
+          <exists>-1</exists>
+          <size>51544</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>inc_the_man_right.cycle2_1_flipped.png</filename>
+        </datafile>
+        <datafile>
+          <name>inc_the_man_right.cycle2_2_flipped.png</name>
+          <exists>-1</exists>
+          <size>51544</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>inc_the_man_right.cycle2_2_flipped.png</filename>
+        </datafile>
+        <datafile>
+          <name>the_man_move_right_1_flipped.png</name>
+          <exists>-1</exists>
+          <size>51544</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>the_man_move_right_1_flipped.png</filename>
+        </datafile>
+      </datafiles>
     </datafiles>
   </datafiles>
   <NewExtensions/>
@@ -168,7 +257,9 @@
     <sprite>sprites\spr_flower</sprite>
     <sprites name="the_man">
       <sprite>sprites\spr_the_man_moving_right</sprite>
-      <sprite>sprites\spr_the_man_idle</sprite>
+      <sprite>sprites\spr_the_man_idle_right</sprite>
+      <sprite>sprites\spr_the_man_moving_left</sprite>
+      <sprite>sprites\spr_the_man_idle_left</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
