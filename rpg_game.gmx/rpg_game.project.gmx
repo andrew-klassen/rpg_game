@@ -261,7 +261,6 @@
       <sprite>sprites\spr_the_man_moving_left</sprite>
       <sprite>sprites\spr_the_man_idle_left</sprite>
     </sprites>
-    <sprite>sprites\sprite5</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_sand</background>
