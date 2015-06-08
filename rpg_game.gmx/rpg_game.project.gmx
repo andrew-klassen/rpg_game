@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="25" name="datafiles">
+  <datafiles number="26" name="datafiles">
     <datafile>
       <name>inc_background_cloud.png</name>
       <exists>-1</exists>
@@ -72,8 +72,8 @@
       </ConfigOptions>
       <filename>inc_sand_texture.png</filename>
     </datafile>
-    <datafiles number="25" name="the_man_sprites">
-      <datafiles number="25" name="right_movement">
+    <datafiles number="26" name="the_man_sprites">
+      <datafiles number="26" name="right_movement">
         <datafile>
           <name>inc_the_man_idle.png</name>
           <exists>-1</exists>
@@ -160,7 +160,7 @@
           <filename>the_man_right.cycle2_2.png</filename>
         </datafile>
       </datafiles>
-      <datafiles number="25" name="left_movement">
+      <datafiles number="26" name="left_movement">
         <datafile>
           <name>inc_the_man_idle_flipped.png</name>
           <exists>-1</exists>
@@ -248,6 +248,23 @@
         </datafile>
       </datafiles>
     </datafiles>
+    <datafile>
+      <name>inc_sun_1.png</name>
+      <exists>-1</exists>
+      <size>102842</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>inc_sun_1.png</filename>
+    </datafile>
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
@@ -261,15 +278,26 @@
       <sprite>sprites\spr_the_man_moving_left</sprite>
       <sprite>sprites\spr_the_man_idle_left</sprite>
     </sprites>
+    <sprite>sprites\spr_sun</sprite>
+    <sprite>sprites\sprite6</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_sand</background>
     <background>background\back_clouds</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_sun</path>
+  </paths>
+  <scripts name="scripts">
+    <script>scripts\scr_draw_dialog.gml</script>
+  </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shd_sun_light.shader</shader>
+  </shaders>
   <objects name="objects">
     <object>objects\obj_the_man</object>
     <object>objects\obj_mr_flower</object>
+    <object>objects\obj_sun</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

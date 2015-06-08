@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>16777088</colour>
   <showcolour>-1</showcolour>
-  <code>audio_play_sound(snd_background_music,10,true);</code>
+  <code>//plays backround music
+audio_play_sound(snd_background_music,10,true);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -51,8 +52,9 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_mr_flower" x="384" y="608" name="inst_4EE46453" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mr_flower" x="2432" y="608" name="inst_4EE46453" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_the_man" x="1216" y="640" name="inst_E79A88CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sun" x="576" y="384" name="inst_2EBE1F63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_sand" x="0" y="704" w="3000" h="400" xo="0" yo="0" id="10000030" name="inst_14AD157A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

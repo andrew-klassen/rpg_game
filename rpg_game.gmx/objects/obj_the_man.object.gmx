@@ -26,8 +26,31 @@
           <argument>
             <kind>1</kind>
             <string>///initilize instance varibles
-image_speed = .2;
 start_jump = 0;
+ground = 672;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///set speed
+image_speed = .2;
 </string>
           </argument>
         </arguments>
@@ -52,18 +75,23 @@ start_jump = 0;
             <kind>1</kind>
             <string>///apply gravity
 
-if (y &lt;= 632) {
-    start_jump = 0;
+//this prevents man from going too high and stops the jump action
+if (y &lt;= ground - 40) {
+    start_jump = false;
 }
+
+//this will add or subtract from the player vertical speed depending on whether he is going down or up
 if (start_jump) {
     --vspeed;
 }
 else {
     ++vspeed;
 }
-if((y + vspeed) &gt;= 672) {
+
+//used to keep player from going through the ground
+if((y + vspeed) &gt;= ground) {
     vspeed = 0;
-    y = 672;
+    y = ground;
 
 }
 </string>
@@ -98,6 +126,65 @@ if (hspeed &lt; 0) {
         </arguments>
       </action>
     </event>
+    <event eventtype="5" enumb="87">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///move up
+
+// if statment prevents man from walking in the sky
+if (y - 2 &gt;= 640) {
+    ground -= 2;
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="83">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///move down
+
+// if statment prevents man from walking off screen
+if (y + 2 &lt;= 1015) {
+    ground += 2;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="68">
       <action>
         <libid>1</libid>
@@ -115,8 +202,29 @@ if (hspeed &lt; 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///move right
+            <string>///begin right animation
 sprite_index = spr_the_man_moving_right;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///move right
 hspeed = 5;
 </string>
           </argument>
@@ -140,8 +248,29 @@ hspeed = 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///move left
+            <string>///begin left animation
 sprite_index = spr_the_man_moving_left;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///move left
 hspeed = -5;
 
 
@@ -168,7 +297,7 @@ hspeed = -5;
           <argument>
             <kind>1</kind>
             <string>///start jump
-if (y == 672 &amp;&amp; !start_jump) {
+if (y == ground &amp;&amp; !start_jump) {
     start_jump = 1;
     vspeed = 10;
 }
