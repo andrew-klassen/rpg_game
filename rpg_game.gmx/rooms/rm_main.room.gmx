@@ -55,6 +55,7 @@ audio_play_sound(snd_background_music,10,true);</code>
     <instance objName="obj_mr_flower" x="2432" y="608" name="inst_4EE46453" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_the_man" x="1216" y="640" name="inst_E79A88CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sun" x="576" y="384" name="inst_2EBE1F63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cactus" x="1952" y="896" name="inst_8FC777B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="back_sand" x="0" y="704" w="3000" h="400" xo="0" yo="0" id="10000030" name="inst_14AD157A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

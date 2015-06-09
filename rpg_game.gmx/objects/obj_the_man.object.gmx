@@ -126,6 +126,31 @@ if (hspeed &lt; 0) {
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_cactus">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///take damage
+health -= 1;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="87">
       <action>
         <libid>1</libid>
@@ -274,6 +299,36 @@ sprite_index = spr_the_man_moving_left;
 hspeed = -5;
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///drawing hud
+
+//draw self
+draw_self();
+
+
+//hud
+draw_healthbar(x - 950, 5, x - 850, 20, health, c_black, c_red, c_green, 0, true, true);
 </string>
           </argument>
         </arguments>

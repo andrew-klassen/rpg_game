@@ -92,12 +92,12 @@ full_screen_effect = true;
           <argument>
             <kind>1</kind>
             <string>if (y &lt; 672) {
-    path_speed = 30;
+    path_speed = 3;
     var_brightness_amount = .1 - ((y /  5) * .003)
     sprite_index = spr_sun;
 }
 else {
-    path_speed = 130;
+    path_speed = 13;
     sprite_index = noone;
 }
 

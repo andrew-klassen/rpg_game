@@ -279,7 +279,7 @@
       <sprite>sprites\spr_the_man_idle_left</sprite>
     </sprites>
     <sprite>sprites\spr_sun</sprite>
-    <sprite>sprites\sprite6</sprite>
+    <sprite>sprites\spr_cactus</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_sand</background>
@@ -298,6 +298,7 @@
     <object>objects\obj_the_man</object>
     <object>objects\obj_mr_flower</object>
     <object>objects\obj_sun</object>
+    <object>objects\obj_cactus</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

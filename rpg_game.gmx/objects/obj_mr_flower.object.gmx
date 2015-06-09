@@ -84,7 +84,8 @@ draw = true;
 //pevent the text from always being drawn
 if (draw) {
 
-    scr_draw_dialog(inst_4EE46453 , "My name is none of yo god damn bidness.")
+    scr_draw_dialog(inst_4EE46453 , "My name is Mr. Flower.")
+
     
 }
 //resets draw
